@@ -1,0 +1,74 @@
+/* ทำให้ทั้งหน้าเว็บมีพื้นหลังที่ครอบคลุมทั้งหน้าจอ */
+body {
+    font-family: 'Itim', sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/004/946/818/small_2x/school-classroom-interior-concept-in-flat-cartoon-design-room-and-furniture-wallpaper-class-with-pupils-desks-chairs-teachers-desk-chalkboard-bookcase-and-decor-illustration-background-vector.jpg');
+  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ความสูงของหน้าจอ */
+    margin: 0;
+    
+}
+
+#game-container {
+    width: 80%;
+    max-width: 800px; /* กำหนดขนาดสูงสุด */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1, p {
+    font-size: 24px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.intro-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.character-image {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#dialogue-box {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CD5C5C;
+    color: white;
+    cursor: pointer;
+    font-family: 'Itim', cursive;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
