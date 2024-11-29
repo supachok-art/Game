@@ -72,3 +72,22 @@ button:hover {
     font-size: 1.2em;
     color: #333;
 }
+#logo-bar {
+    position: absolute;
+    top: 20px;  /* ระยะห่างจากขอบบน */
+    left: 89%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* ขนาดพื้นที่โลโก้ทั้งหมด */
+    z-index: 1;
+}
+#logo-bar img {
+    width: 50px; /* ขนาดโลโก้ */
+    height: auto;
+        border: 3px solid white;
+        border-radius: 50%; /* ทำมุมโค้ง */
+}
+#logo-bar img:first-child, #logo-bar img:nth-child(2) {
+    border-radius: 10%; /* โลโก้ที่ 1 เป็นสี่เหลี่ยม */
+}
