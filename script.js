@@ -1,7 +1,7 @@
 const scenes = [
     {
         image: "02.png", // ตัวละคร ป๋อง
-        dialogue: "มายล์: เฮ้ ป๋อง! สนใจหาเงินง่ายๆ มั้ย? เล่นแค่เกมเล็กๆ เดี๋ยวเราสอนให้!",
+        dialogue: "มายล์: เฮ้ ต้น! สนใจหาเงินง่ายๆ มั้ย? เล่นแค่เกมเล็กๆ เดี๋ยวเราสอนให้!",
         choices: [
             { text: "ไม่ล่ะ ขอบใจนะ แต่เราไม่สนใจ", score: 10 },
             { text: "ไม่เอาดีกว่า เราไม่อยากเสียเงิน เสียเวลา และอาจจะเสียเพื่อนด้วย", score: 10 },
@@ -100,8 +100,8 @@ function handleChoice(choiceScore) {
 
 function displayEnding() {
     document.getElementById("dialogue-text").textContent = score >= 0 
-        ? "เยี่ยมมาก: ป๋องสามารถปฏิเสธคำชวนทั้งหมดได้!"
-        : "เกิดความเสี่ยง: ป๋องหลงเชื่อคำชวนจนทำให้เกิดปัญหาหนัก!";
+        ? "เยี่ยมมาก: ต้นสามารถปฏิเสธคำชวนทั้งหมดได้!"
+        : "เกิดความเสี่ยง: ต้นหลงเชื่อคำชวนจนทำให้เกิดปัญหาหนัก!";
     document.getElementById("choices").innerHTML = "";
     const restartButton = document.createElement("button");
     restartButton.textContent = "เริ่มใหม่";
@@ -118,3 +118,4 @@ function restartGame() {
     // แสดงหน้าแนะนำใหม่
     document.getElementById("intro-screen").style.display = "block";
 }
+
